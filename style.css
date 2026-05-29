@@ -52,6 +52,7 @@ header {
     
     }
 
+
     a {
         color: #FF840A;
         text-align: center;
@@ -107,6 +108,26 @@ h4 {
     background-color: #FF840A;
 }
 
+    aside {
+    background-color: #9A7FA2;
+    opacity: 50%;
+    top: 50px;
+    right: 0px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 80px;
+    height: 150px;
+    align-items: flex-end;
+    justify-content: space-around;
+    border-radius: 25px 0px 0px 25px;
+
+        a, a:hover {
+            all: unset;
+        }
+    }
+
 #hero {
     margin-top: 60px;
     padding: 50px;
@@ -141,7 +162,7 @@ h4 {
     align-items: center;
 } 
 
-#hola {
+#hola, #mini{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -236,8 +257,16 @@ footer {
         font-size: 0.8rem;
         line-height: 1rem;
     }
-    a, a:hover {
-    all: unset;
+    a {
+        color: #fff;
+        font-size: 0.8rem;
+        font-weight: 400;
+        border: none
+    }
+    a:hover {
+        font-weight: 700;
+        border: none;
+        background: none;
     }
 
     article {
@@ -250,6 +279,7 @@ footer {
 /** pag CONTACTO **/
 
 #contacto_tit {
+    margin-top: 10vh;
     h4 {
         max-width: 185px;
     }
@@ -260,12 +290,12 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 120px;
+    margin-top: 15vh;
 }
 
 #Info_contacto {
     width: 400px;
     height: 600px;
-    margin-top: 15vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -281,7 +311,7 @@ form {
     width: 925px;
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: 30px;
     flex-wrap: wrap;
 
     p {
@@ -289,35 +319,130 @@ form {
         text-align: center;
         font-family: "Bricolage Grotesque";
         font-weight: 700;
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
+}
+
+form article {
+    display: flex;
+    gap: 40px;
 }
 form div {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 5px;
 }
 
 input{
     border: 3px solid #FF840A;
     padding: 8px;
+    width: 440px;
+    font-size: 1rem;
 }
 
-#Mensaje {
-    width: 925px;
+textarea {
+    width: 920px;
+    height: 170px;
+    border: 3px solid #FF840A;
+    padding: 8px;
+    font-size: 1rem;
 }
-#Enviar {
-        color: #FFF;
-        text-align: center;
-        font-family: "Bricolage Grotesque";
-        font-weight: 700;
-        background-color: #FF840A;
+
+.botonenviar {
+    display: flex;
+    flex-direction: row;
+    gap: 57vh;
+
+    #Enviar {
+            color: #FFF;
+            text-align: center;
+            font-family: "Bricolage Grotesque";
+            font-weight: 700;
+            background-color: #FF840A;
+            width: 116px;
+            font-size: 1rem;
+            line-height: 0.8rem;
+        }
     }
-
 label {
     color: #FF840A;
     text-align: center;
     font-family: "Bricolage Grotesque";
     font-weight: 700;
-    line-height: 2rem;
+    font-size: 1rem;
+}
+
+/** pagina sobre mi **/
+
+#gal-fancybox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+
+    a, a:hover {
+        all: unset;
+    }
+}
+
+#yo_tit {
+    margin-top: 10vh;
+    h4 {
+        max-width: 135px;
+    }
+}
+
+#mini {
+    align-items: flex-start;
+    h2 {
+        width: 343px;
+    }
+    article {
+        height: unset;
+        gap: 30px;
+    }
+}
+
+#hobbies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh;
+
+    h4 {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        width: 1300px;
+        justify-content: center;
+    }
+
+    article {
+        display: flex;
+        justify-content: center;
+        gap: 26px;
+        margin-top: 20px;
+        margin-bottom: 10vh;
+    }
+    div {
+        border: 3px solid #FF840A;
+        padding: 5px;
+        width: 305px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #FF840A;
+            line-height: 2rem;
+        }
+        figcaption {
+            font-weight: 200;
+            color: #FF840A;
+        }
+    }
 }

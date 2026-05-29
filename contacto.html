@@ -45,44 +45,51 @@
             </article>
 
             <form method="post" action="" target="_blank" enctype="text/plain">
-                <div>
-                    <label for="Nombre">Tu nombre*</label>
-                    <input type="text" name="Nombre *" id="Nombre" maxlength="40" required>
-
-                    <label for="Teléfono">Tu número de teléfono</label>
-                    <input type="tel" name="Teléfono" id="Teléfono">
-                </div>
-                <div>
-                    <label for="Mail">Tu mail*</label>
-                    <input type="email" name="Mail *" id="Mail" required>
-
-                    <label for="Proyecto">El nombre de tu proyecto</label>
-                    <input type="text" name="Proyecto" id="Proyecto">
-                </div>
-                <div>
-                    <label for="Mensaje">Escribí tu mensaje o consulta *</label>
-                    <input type="text" name="Mensaje" id="Mensaje" placeholder="Hola! Te quería consultar... ">
-                </div>
-                    <p>Los campos con (*) son obligatorios</p>
-                    <input type="submit" name="Enviar" id="Enviar">
+                <article>
+                    <div>
+                        <label for="Nombre">Tu nombre*</label>
+                        <input type="text" name="Nombre *" id="Nombre" maxlength="40" required>
+                    </div>
+                    <div>
+                        <label for="Teléfono">Tu número de teléfono</label>
+                        <input type="tel" name="Teléfono" id="Teléfono">
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <label for="Mail">Tu mail*</label>
+                        <input type="email" name="Mail *" id="Mail" required>
+                    </div>
+                    <div>
+                        <label for="Proyecto">El nombre de tu proyecto</label>
+                        <input type="text" name="Proyecto" id="Proyecto">
+                    </div>
+                </article>
+                    <div>
+                        <label for="Mensaje">Escribí tu mensaje o consulta *</label>
+                        <textarea name="Mensaje" id="Mensaje">Hola! Te quería consultar...</textarea>
+                    </div> 
+                    <div class="botonenviar">
+                        <p>Los campos con (*) son obligatorios</p>
+                        <input type="submit" name="Enviar" id="Enviar">
+                    </div>
             </form>
         </section>
     </main>
 
     <footer>
-    <article>
-        <img src="img/lala-logo.svg" alt="logo personal" height="46" width="80">
+        <article>
+            <img src="img/lala-logo.svg" alt="logo personal" height="46" width="80">
+            <div>
+                <h4> LALA DG - Luciana Lescano </h4>
+                <p> Copyright © 2026 Luciana Lescano - Todos los derehos reservados </p>
+            </div>
+        </article>
         <div>
-            <h4> LALA DG - Luciana Lescano </h4>
-            <p> Copyright © 2026 Luciana Lescano - Todos los derehos reservados </p>
+            <a href="#contacto">VOLVER ARRIBA </a>
         </div>
-    </article>
-    <div>
-        <a href="https://www.instagram.com/its_lala.dg" target="_blank"> 
-            <img src="img/Instagram_white.svg" alt="instagram personal" height="70" width="70">
-        </a>
-        <a href="https://www.behance.net/lucianalescano2" target="_blank">
-            <img src="img/Behance_white.svg" alt="behance personal" height="70" width="70"> 
-        </a>
-    </div>
-</footer>
+    </footer>
+
+</body>
+
+</html>
