@@ -3,11 +3,12 @@
 
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lescano Luciana-Portfolio</title>
     <link href="style.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="img/favicon.png" type="image/x-icon">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Caveat:wght@400..700&display=swap')
+        @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Caveat:wght@400..700&display=swap');
     </style>
 </head>
 
@@ -15,20 +16,18 @@
     <header>
         <nav>
             <a href="index.html">INICIO</a>
-            <a href="#proyectos">PROYECTOS</a>
+            <a href="proyectos.html">PROYECTOS</a>
             <a href= "#contacto">CONTACTO</a>
         </nav>
     </header>
 
     <main>
         <section id="contacto_tit">
-            <article class="titulo">
-                <div>
-                    <h4>ENCANTADA!</h4>
-                    <h1>CHARLEMOS</h1>
-                    <h3>sin problemas</h3>
-                </div>
-            </article>
+                <h3>
+                    <span class="ceja">ENCANTADA!</span>
+                    <span class="principal">CHARLEMOS</span>
+                    <span class="secundario">sin problemas</span>
+                </h3>
         </section>
 
         <section id="contacto-bloque">
@@ -44,11 +43,11 @@
                 </div>
             </article>
 
-            <form method="post" action="" target="_blank" enctype="text/plain">
+            <form method="post" action="" target="_blank" enctype="multipart/form-data">
                 <article>
                     <div>
-                        <label for="Nombre">Tu nombre*</label>
-                        <input type="text" name="Nombre *" id="Nombre" maxlength="40" required>
+                        <label for="Nombre">Tu nombre *</label>
+                        <input type="text" name="Nombre" id="Nombre" maxlength="40" required>
                     </div>
                     <div>
                         <label for="Teléfono">Tu número de teléfono</label>
@@ -57,8 +56,8 @@
                 </article>
                 <article>
                     <div>
-                        <label for="Mail">Tu mail*</label>
-                        <input type="email" name="Mail *" id="Mail" required>
+                        <label for="Mail">Tu mail *</label>
+                        <input type="email" name="Mail" id="Mail" required>
                     </div>
                     <div>
                         <label for="Proyecto">El nombre de tu proyecto</label>
@@ -68,25 +67,26 @@
                     <div>
                         <label for="Mensaje">Escribí tu mensaje o consulta *</label>
                         <textarea name="Mensaje" id="Mensaje">Hola! Te quería consultar...</textarea>
-                    </div> 
-                    <div class="botonenviar">
-                        <p>Los campos con (*) son obligatorios</p>
-                        <input type="submit" name="Enviar" id="Enviar">
                     </div>
+                    <div class="botones">
+                        <input type="file">
+                        <input type="submit" name="Enviar" id="Enviar" formenctype="multipart/form-data">
+                    </div>
+                    <p>Los campos con (*) son obligatorios</p>
             </form>
         </section>
     </main>
 
     <footer>
-        <article>
+        <div class="legal">
             <img src="img/lala-logo.svg" alt="logo personal" height="46" width="80">
             <div>
                 <h4> LALA DG - Luciana Lescano </h4>
-                <p> Copyright © 2026 Luciana Lescano - Todos los derehos reservados </p>
+                <p> Copyright © 2026 Luciana Lescano - Todos los derechos reservados </p>
             </div>
-        </article>
+        </div>
         <div>
-            <a href="#contacto">VOLVER ARRIBA </a>
+            <a href="#">VOLVER ARRIBA </a>
         </div>
     </footer>
 

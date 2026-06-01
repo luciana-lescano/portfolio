@@ -1,10 +1,6 @@
 /* CSS DOCUMENT */
 @charset "utf-8";
 
-@font-face {
-    font-family: "Bricolage Grotesque", sans serif;
-    src: url();
-}
 
 * {
     font-family: 'Bricolage Grotesque', sans-serif;
@@ -19,7 +15,9 @@
     box-sizing: border-box;
 }
 
-body { overflow-x: hidden;}
+body {
+    overflow-x: hidden;
+}
 
 a {
     color: #FF840A;
@@ -49,9 +47,7 @@ header {
         display: flex;
         gap: 30px;
         padding: 10px;
-    
     }
-
 
     a {
         color: #FF840A;
@@ -70,7 +66,16 @@ header {
     }
 }
 
-h1 {
+.ceja {
+    color: #FFF;
+    font-family: "Bricolage Grotesque";
+    font-weight: 700;
+    background-color: #FF840A;
+    padding-left: 5px;
+    width: 330px;
+}
+
+.principal {
     font-family: "Bricolage Grotesque";
     font-size: 7rem;
     font-style: normal;
@@ -78,6 +83,22 @@ h1 {
     line-height: 7rem;
     color: #9A7FA2;
     text-align: right;
+}
+
+.secundario {
+    font-family: "Caveat", cursive;
+    font-size: 7rem;
+    font-style: normal;
+    font-weight: 400;
+    color: #FF840A;
+    line-height: 0rem;
+    text-align: center;
+}
+
+h1,
+h3 {
+    display: flex;
+    flex-direction: column;
 }
 
 h2 {
@@ -90,16 +111,6 @@ h2 {
     text-align: right;
 }
 
-h3 {
-    font-family: "Caveat", cursive;
-    font-size: 7rem;
-    font-style: normal;
-    font-weight: 400;
-    color: #FF840A;
-    line-height: 0rem;
-    text-align: center;
-}
-
 h4 {
     color: #FFF;
     text-align: center;
@@ -108,25 +119,23 @@ h4 {
     background-color: #FF840A;
 }
 
-    aside {
+aside {
     background-color: #9A7FA2;
     opacity: 50%;
     top: 50px;
     right: 0px;
     position: fixed;
-    display: flex;
-    flex-direction: column;
     padding: 10px;
     width: 80px;
     height: 150px;
     align-items: flex-end;
-    justify-content: space-around;
     border-radius: 25px 0px 0px 25px;
 
-        a, a:hover {
-            all: unset;
-        }
+    a,
+    a:hover {
+        all: unset;
     }
+}
 
 #hero {
     margin-top: 60px;
@@ -136,62 +145,58 @@ h4 {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    display: flex;
+    justify-content: center;
 
-
-    h4 {
+    .ceja {
         font-size: 3rem;
         line-height: 3rem;
         max-width: 160px;
     }
 
-    h1 {
+    .principal {
         font-size: 15rem;
         line-height: 13rem;
     }
 
-    h3 {
+    .secundario {
         font-size: 15rem;
         line-height: 2rem;
         text-align: center;
     }
 }
 
-.titulo {
+#hola,
+#mini {
     display: flex;
-    justify-content: center;
-    align-items: center;
-} 
-
-#hola, #mini{
-    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 40px;
     margin-top: 20vh;
     padding: 50px;
 
-        article {
-            max-width: 530px;
-            height: 535px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
+    article {
+        max-width: 530px;
+        height: 535px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 
-        h2 {
-            max-width: 380px;
-        }
+    h2 {
+        max-width: 380px;
+    }
 }
 
-#proyectos_carrusel, #contactame_tit {
+#proyectos_carrusel,
+#yo_tit,
+#cv_tit,
+#contacto_tit, #proy_tit {
     margin: 10vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    h4{
-        max-width: 330px;
-    }
 }
 
 .carrusel {
@@ -201,6 +206,7 @@ h4 {
     width: 100%;
 
 }
+
 .grupo {
     display: flex;
     gap: 30px;
@@ -216,21 +222,27 @@ h4 {
 }
 
 @keyframes spin {
-    from {transform: translateX(0);}
-    to {transform: translateX(-50%)}
+    from {
+        transform: translateX(0);
     }
+
+    to {
+        transform: translateX(-50%)
+    }
+}
 
 #contactame {
     display: flex;
+    flex-wrap: wrap;
     gap: 60px;
     align-items: center;
     justify-content: center;
-    padding-top: 10vh;
+    padding-bottom: 10vh;
 
     h2 {
         max-width: 650px;
     }
-    
+
     article {
         max-width: 330px;
         display: flex;
@@ -242,8 +254,9 @@ h4 {
 
 footer {
     background-color: #9A7FA2;
-    height: 165px;
+    height: 120px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding: 0 70px;
@@ -251,26 +264,31 @@ footer {
     h4 {
         background: none;
         text-align: left;
+        font-size: 1rem;
     }
-    p{
+
+    p {
         color: #FFF;
-        font-size: 0.8rem;
+        font-size: 0.6rem;
         line-height: 1rem;
     }
+
     a {
         color: #fff;
         font-size: 0.8rem;
         font-weight: 400;
         border: none
     }
+
     a:hover {
         font-weight: 700;
         border: none;
         background: none;
     }
 
-    article {
+    .legal {
         display: flex;
+        flex-wrap: wrap;
         gap: 20px;
         align-items: center;
     }
@@ -279,9 +297,8 @@ footer {
 /** pag CONTACTO **/
 
 #contacto_tit {
-    margin-top: 10vh;
-    h4 {
-        max-width: 185px;
+    .ceja {
+        max-width: 180px;
     }
 }
 
@@ -289,8 +306,9 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 120px;
-    margin-top: 15vh;
+    margin: 15vh;
 }
 
 #Info_contacto {
@@ -298,7 +316,8 @@ footer {
     height: 600px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    flex-wrap: wrap;
 
     .redes {
         display: flex;
@@ -325,6 +344,7 @@ form {
 
 form article {
     display: flex;
+    flex-direction: row;
     gap: 40px;
 }
 form div {
@@ -334,7 +354,7 @@ form div {
     gap: 5px;
 }
 
-input{
+input {
     border: 3px solid #FF840A;
     padding: 8px;
     width: 440px;
@@ -349,22 +369,29 @@ textarea {
     font-size: 1rem;
 }
 
-.botonenviar {
+.botones {
     display: flex;
     flex-direction: row;
-    gap: 57vh;
+    gap: 40vh;
+
+    input {
+        font-size: 0.7rem;
+        padding: 5px;
+    }
 
     #Enviar {
-            color: #FFF;
-            text-align: center;
-            font-family: "Bricolage Grotesque";
-            font-weight: 700;
-            background-color: #FF840A;
-            width: 116px;
-            font-size: 1rem;
-            line-height: 0.8rem;
-        }
+        color: #FFF;
+        text-align: center;
+        font-family: "Bricolage Grotesque";
+        font-weight: 700;
+        background-color: #FF840A;
+        width: 116px;
+        font-size: 1rem;
+        line-height: 0.8rem;
+        height: 38px;
     }
+}
+
 label {
     color: #FF840A;
     text-align: center;
@@ -373,7 +400,7 @@ label {
     font-size: 1rem;
 }
 
-/** pagina sobre mi **/
+/** pag SOBRE MI **/
 
 #gal-fancybox {
     display: flex;
@@ -381,23 +408,25 @@ label {
     align-items: center;
     margin: 30px;
 
-    a, a:hover {
+    a,
+    a:hover {
         all: unset;
     }
 }
 
 #yo_tit {
-    margin-top: 10vh;
-    h4 {
-        max-width: 135px;
+    .ceja {
+        max-width: 125px;
     }
 }
 
 #mini {
     align-items: flex-start;
+
     h2 {
         width: 343px;
     }
+
     article {
         height: unset;
         gap: 30px;
@@ -411,21 +440,16 @@ label {
     align-items: center;
     margin: 5vh;
 
-    h4 {
-        height: 50px;
-        display: flex;
-        align-items: center;
-        width: 1300px;
-        justify-content: center;
-    }
-
     article {
         display: flex;
-        justify-content: center;
-        gap: 26px;
+        gap: 44px;
         margin-top: 20px;
         margin-bottom: 10vh;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
     }
+
     div {
         border: 3px solid #FF840A;
         padding: 5px;
@@ -440,9 +464,306 @@ label {
             color: #FF840A;
             line-height: 2rem;
         }
+
         figcaption {
             font-weight: 200;
             color: #FF840A;
+        }
+    }
+
+    .musica {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+#hobbies,
+#galeria {
+    h4 {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        width: 1345px;
+        justify-content: center;
+    }
+}
+
+#galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#gal-fancybox {
+    display: flex;
+    margin: 30px;
+    align-items: center;
+    gap: 0px;
+
+    div {
+        display: flex;
+        gap: 8px;
+    }
+}
+
+#cv_tit {
+    .ceja {
+        width: 172px;
+    }
+}
+
+#cv {
+    display: flex;
+    flex-direction: row;
+    margin: 20vh 10vh;
+    gap: 50px;
+    justify-content: center;
+
+    #izquierda {
+        padding-right: 40px;
+        border-right: 3px solid #FF840A;
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            font-size: 3rem;
+        }
+
+        p,
+        li,
+        h5 {
+            font-size: 1rem;
+        }
+
+        #contenedor {
+            display: flex;
+            justify-content: flex-end;
+            gap: 25px;
+
+            div {
+                width: 350px;
+            }
+        }
+    }
+
+    #derecha {
+        width: 530px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        div {
+            gap: 30px;
+            display: flex;
+            flex-direction: column;
+
+            .herramientas {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+        }
+    }
+}
+
+/** pag PROYECTOS **/
+
+#proy_tit {
+    margin-bottom: 25vh;
+    .ceja {
+        max-width: 215px;
+    }
+}
+
+ul {
+    list-style-position: inside;
+}
+article {
+    display: flex;
+    flex-direction: column;
+    width: 610px;
+    gap: 20px;
+}
+
+.foto-izq, .foto-der {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    margin: 8vh;
+    justify-content: center;
+
+    img {
+    border: 1px solid #FF840A;
+    }
+}
+
+/**
+@media screen and (max-width:500px) {
+    header {
+        padding: 30px;
+        flex-direction: column;
+
+        nav {
+            display: flex;
+            gap: 30px;
+            flex-direction: column;
+            align-items: flex-start;
+        
+            a {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    aside {
+        width: 18%;
+        height: 22%;
+
+        img {
+            width: 85%;
+        }
+    }
+    #hero {
+        height: 300px;
+        margin-top: 5vh;
+        .ceja {
+            font-size: 1.5rem;
+            line-height: 2rem;
+            max-width: 90px;
+        }
+
+        .principal {
+            font-size: 6rem;
+            line-height: 6rem;
+        }
+
+        .secundario {
+            font-size: 6rem;
+            line-height: 0rem;
+        }
+    }
+
+    #hola {
+        margin-top: 5vh;
+        padding: 30px;
+        gap: 15px;
+
+        article {
+            height: 400px;
+            gap: 20px;
+        }
+        img {
+            width: 44%;
+            height: auto;
+        }
+    }
+
+    h2 {
+        width: 125px;
+        font-size: 2rem;
+        line-height: 1.8rem;
+    }
+
+    a {
+        font-size: 0.8rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+
+    h3 {
+        .ceja {
+            font-size: 0.8rem;
+            line-height: normal;
+            max-width: 210px;
+        }
+
+        .principal {
+            font-size: 2.5rem;
+            line-height: 3rem;
+        }
+        .secundario {
+            font-size: 2.5rem;
+            line-height: 0rem;
+        }
+    }
+
+    #proyectos_carrusel {
+        margin: 10vh 0vh;
+    }
+
+    #contactame {
+        gap: 25px;
+        justify-content: flex-start;
+        padding: 30px;
+
+        article {
+            gap: 20px;
+        }
+
+        h2 {
+            width: 250px;
+            text-align: left;
+        }
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column-reverse;
+        align-content: center;
+        padding: 15px;
+        gap: 25px;
+        flex-wrap: wrap;
+        height: 133px;
+
+        .legal {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+        h4, p {
+            font-size: 0.5rem;
+            line-height: 0.5rem;
+        }
+    }
+
+    #contacto_tit {
+        .ceja {
+            max-width: 117px;
+        }
+    }
+    #contacto-bloque {
+        margin-top: 10vh;
+        padding: 30px;
+        gap: 50px;
+        flex-wrap: wrap;
+
+        article, div, input, textarea {
+            width: 100%;
+            height: auto;
+        }
+        textarea {
+            height: 50vh;
+        }
+        form {
+            width: 100%;
+            display: flex;
+            gap: 30px;
+            flex-direction: column;
+
+            label, p {
+                font-size: 0.8rem;
+            }
+
+            .botones {
+                display: flex;
+                gap: 5vh;
+                flex-wrap: wrap;
+            }
         }
     }
 }

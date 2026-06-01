@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
+
     <title>Lescano Luciana-Portfolio</title>
     <link href="style.css" rel="stylesheet" type="text/css">
     <link href="js/jquery.fancybox.css" rel="stylesheet">
@@ -16,7 +17,7 @@
     <header>
         <nav>
             <a href="index.html">INICIO</a>
-            <a href="#proyectos">PROYECTOS</a>
+            <a href="proyectos.html">PROYECTOS</a>
             <a href= "contacto.html">CONTACTO</a>
         </nav>
     </header>
@@ -24,21 +25,19 @@
     <main>
         <aside>
             <a href="https://www.instagram.com/its_lala.dg" target="_blank"> 
-                <img src="img/Instagram_white.svg" alt="instagram personal" height="60" width="60">
+                <img src="img/instagram_white.svg" alt="instagram personal" height="60" width="60">
             </a>
             <a href="https://www.behance.net/lucianalescano2" target="_blank">
-                <img src="img/Behance_white.svg" alt="behance personal" height="60" width="60"> 
+                <img src="img/behance_white.svg" alt="behance personal" height="60" width="60"> 
             </a>
         </aside>
 
         <section id="yo_tit">
-            <article class="titulo">
-                <div>
-                    <h4>ACÁ HAY</h4>
-                    <h1>UN POCO</h1>
-                    <h3>sobre mi</h3>
-                </div>
-            </article>
+                <h3>
+                    <span class="ceja">ACÁ HAY</span>
+                    <span class="principal">UN POCO</span>
+                    <span class="secundario">sobre mi</span>
+                </h3>
         </section>
         <section id="mini">
             <h2>Vamos unos años para atrás</h2>
@@ -52,8 +51,9 @@
         <section ID="hobbies">
             <h4>MIS HOBBIES</h4>
             <article>
-                <div>
+                <div class="musica">
                     <p>ESCUCHAR MÚSICA</p>
+                    <iframe data-testid="embed-iframe" src="https://open.spotify.com/embed/playlist/3xqTWBOxRU6R4V4nWFzknS?utm_source=generator&theme=0" width="90%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 </div>
                 <div>
                     <p>VER SERIES</p>
@@ -73,7 +73,7 @@
 
         <section id="galeria">
             <h4>TAMBIÉN AMO SACAR FOTOS!</h4>
-            <darticle id="gal-fancybox">
+            <article id="gal-fancybox">
                 <div>
                     <a href="img/galeria/gal01.jpg" data-fancybox="gallery">
                         <img src="img/galeria/thumbnails/thumbnail01.jpg" alt="foto de un gato">
@@ -116,19 +116,80 @@
                         <img src="img/galeria/thumbnails/thumbnail12.jpg" alt="foto de un gato">
                     </a>
                 </div>
-            </darticle>
+            </article>
         </section>
 
+        <section id="cv_tit">
+                <h3>
+                    <span class="ceja">MI CV COMO</span>
+                    <span class="principal">PERSONA</span>
+                    <span class="secundario">profesional</span>
+                </h3>
+        </section>
+        <section id="cv">
+            <article id="izquierda">
+                <h2>Educación</h2>
+                    <div id="contenedor">
+                        <div>
+                            <h5>Licenciatura en Diseño y Comunicación Visual</h5>
+                            <p>UNLa | 2022-Act.</p>
+                        </div>
+                        <div>
+                            <h5>Bachiller en economía y admin. de empresas</h5>
+                            <p>Inst. San José | 2021</p>
+                        </div>
+                    </div>
+                <h2>Experiencia laboral</h2>
+                    <div id="contenedor">
+                        <div>
+                            <h5>Administración</h5>
+                            <ul>
+                                <li>Organización y gestión de documentos</li>
+                                <li>Atención al público</li>
+                                <li>Manejo de varias tareas en simultáneo</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5>Emprendimientos</h5>
+                            <ul>
+                                <li>Creación y gestión</li>
+                                <li>Desarrollo de identidad y comunicación</li>
+                                <li>Organización y liderazgo</li>
+                                <li>Resolución de problemas de forma autónoma</li>
+                            </ul>
+                        </div>
+                    </div>
+            </article>
+
+            <article id="derecha">
+                <div>
+                    <h4>ASPIRACIONES</h4>
+                    <p>Mis proyectos, profesionales y académicos, en su mayoría se orientan principalmente al diseño de identidades visuales. Sin embargo, me gustaría seguir aprendiendo y profundizando en el diseño editorial, y lograr de poco, conseguir experiencias en este rubro. </p>
+                </div>
+                <div>
+                    <h4>HERRAMIENTAS QUE USO</h4>
+                    <div class="herramientas">
+                        <img src="img/logo_ps.svg" alt="adobe photoshop" width="70" height="70">
+                        <img src="img/logo_id.svg" alt="adobe photoshop" width="70" height="70">
+                        <img src="img/logo_ai.svg" alt="adobe photoshop" width="70" height="70">
+                        <img src="img/logo_figma.svg" alt="adobe photoshop" width="70" height="70">
+                        <img src="img/logo_visual.svg" alt="adobe photoshop" width="70" height="70">
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
     <footer>
-        <article>
+        <div class="legal">
             <img src="img/lala-logo.svg" alt="logo personal" height="46" width="80">
             <div>
                 <h4> LALA DG - Luciana Lescano </h4>
-                <p> Copyright © 2026 Luciana Lescano - Todos los derehos reservados </p>
+                <p> Copyright © 2026 Luciana Lescano - Todos los derechos reservados </p>
             </div>
-        </article>
+        </div>
         <div>
-            <a href="#inicio">VOLVER ARRIBA </a>
+            <a href="#"> VOLVER ARRIBA </a>
         </div>
     </footer>
 
